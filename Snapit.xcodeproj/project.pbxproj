@@ -15,6 +15,8 @@
 		8F2452D0202D11B200001552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2452CE202D11B200001552 /* LaunchScreen.storyboard */; };
 		8F2452D8202D160800001552 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F2452D7202D160800001552 /* GoogleService-Info.plist */; };
 		8F2452DA202D270A00001552 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2452D9202D270A00001552 /* SnapsViewController.swift */; };
+		8F3DA5A62030FD670007EA65 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DA5A52030FD670007EA65 /* PictureViewController.swift */; };
+		8F3DA5A8203110890007EA65 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8F2452D1202D11B200001552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F2452D7202D160800001552 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8F2452D9202D270A00001552 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		8F3DA5A52030FD670007EA65 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		EBDA8863C66C5B6F494BA508 /* Pods-Snapit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapit/Pods-Snapit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,8 @@
 				8F2452C5202D11B200001552 /* AppDelegate.swift */,
 				8F2452C7202D11B200001552 /* SignViewController.swift */,
 				8F2452C9202D11B200001552 /* Main.storyboard */,
+				8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */,
+				8F3DA5A52030FD670007EA65 /* PictureViewController.swift */,
 				8F2452D9202D270A00001552 /* SnapsViewController.swift */,
 				8F2452CC202D11B200001552 /* Assets.xcassets */,
 				8F2452CE202D11B200001552 /* LaunchScreen.storyboard */,
@@ -231,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2452C8202D11B200001552 /* SignViewController.swift in Sources */,
+				8F3DA5A62030FD670007EA65 /* PictureViewController.swift in Sources */,
+				8F3DA5A8203110890007EA65 /* SelectUserViewController.swift in Sources */,
 				8F2452C6202D11B200001552 /* AppDelegate.swift in Sources */,
 				8F2452DA202D270A00001552 /* SnapsViewController.swift in Sources */,
 			);
