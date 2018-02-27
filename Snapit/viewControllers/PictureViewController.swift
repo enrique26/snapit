@@ -9,15 +9,15 @@
 import UIKit
 import Firebase
 
-class PictureViewController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class PictureViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var textDescriptionFiled: UITextField!
+    
     
     var imagePicker=UIImagePickerController();
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +36,6 @@ class PictureViewController: UIViewController,UITextFieldDelegate,UIImagePickerC
         imageView.image=image
         imageView.backgroundColor = UIColor.clear
         imagePicker.dismiss(animated: true, completion: nil)
-    }
-    
-    //esconder teclado al dar click en el boton return del teclado
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
 
     @IBAction func cameraTapp(_ sender: Any) {
@@ -64,10 +58,16 @@ class PictureViewController: UIViewController,UITextFieldDelegate,UIImagePickerC
                 print("@have an error \(String(describing: error))")
             }else {
                 print(metadata?.downloadURL()! ?? "default");
-                self.performSegue(withIdentifier: "selectUserSegue", sender: nil)
+                self.performSegue(withIdentifier: "selectUserSegue", sender:metadata?.downloadURL()?.absoluteString )
             }
         }
-        
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! SelectUserViewController
+        nextVC.imageUrl=sender as! String
+        nextVC.descript=textDescriptionFiled.text!
         
     }
 }

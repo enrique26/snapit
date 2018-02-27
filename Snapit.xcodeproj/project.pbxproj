@@ -17,6 +17,8 @@
 		8F2452DA202D270A00001552 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2452D9202D270A00001552 /* SnapsViewController.swift */; };
 		8F3DA5A62030FD670007EA65 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DA5A52030FD670007EA65 /* PictureViewController.swift */; };
 		8F3DA5A8203110890007EA65 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */; };
+		8FCBCA142040EB9900C09D50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBCA132040EB9900C09D50 /* User.swift */; };
+		8FECB2322044E42000D9795F /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FECB2312044E41F00D9795F /* Snap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		8F2452D9202D270A00001552 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		8F3DA5A52030FD670007EA65 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		8FCBCA132040EB9900C09D50 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8FECB2312044E41F00D9795F /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		EBDA8863C66C5B6F494BA508 /* Pods-Snapit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapit/Pods-Snapit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,18 +73,36 @@
 		8F2452C4202D11B100001552 /* Snapit */ = {
 			isa = PBXGroup;
 			children = (
-				8F2452D7202D160800001552 /* GoogleService-Info.plist */,
+				8FCBCA152040EBCB00C09D50 /* viewControllers */,
+				8FCBCA162040EBE700C09D50 /* models */,
 				8F2452C5202D11B200001552 /* AppDelegate.swift */,
-				8F2452C7202D11B200001552 /* SignViewController.swift */,
 				8F2452C9202D11B200001552 /* Main.storyboard */,
-				8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */,
-				8F3DA5A52030FD670007EA65 /* PictureViewController.swift */,
-				8F2452D9202D270A00001552 /* SnapsViewController.swift */,
 				8F2452CC202D11B200001552 /* Assets.xcassets */,
 				8F2452CE202D11B200001552 /* LaunchScreen.storyboard */,
+				8F2452D7202D160800001552 /* GoogleService-Info.plist */,
 				8F2452D1202D11B200001552 /* Info.plist */,
 			);
 			path = Snapit;
+			sourceTree = "<group>";
+		};
+		8FCBCA152040EBCB00C09D50 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F2452C7202D11B200001552 /* SignViewController.swift */,
+				8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */,
+				8F3DA5A52030FD670007EA65 /* PictureViewController.swift */,
+				8F2452D9202D270A00001552 /* SnapsViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		8FCBCA162040EBE700C09D50 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8FCBCA132040EB9900C09D50 /* User.swift */,
+				8FECB2312044E41F00D9795F /* Snap.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		BAA26567B7D6A39A1B1FB3CD /* Pods */ = {
@@ -240,6 +262,8 @@
 				8F3DA5A62030FD670007EA65 /* PictureViewController.swift in Sources */,
 				8F3DA5A8203110890007EA65 /* SelectUserViewController.swift in Sources */,
 				8F2452C6202D11B200001552 /* AppDelegate.swift in Sources */,
+				8FECB2322044E42000D9795F /* Snap.swift in Sources */,
+				8FCBCA142040EB9900C09D50 /* User.swift in Sources */,
 				8F2452DA202D270A00001552 /* SnapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

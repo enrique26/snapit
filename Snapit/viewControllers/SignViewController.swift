@@ -38,6 +38,8 @@ class SignViewController: UIViewController {
                         print("@error tried to sign in and have an error \(String(describing: errorIn))");
                     }else{
                         print("@create user create instantly!!");
+                        Database.database().reference().child("users").child(user!.uid).child("email").setValue(user!.email)
+                        
                         self.performSegue(withIdentifier: "signinsegue", sender: nil);
                     }
                 })

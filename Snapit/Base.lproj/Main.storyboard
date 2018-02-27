@@ -24,7 +24,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="snapit@admin.com" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-gj-UQD">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="snapit2@admin.com" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-gj-UQD">
                                 <rect key="frame" x="75" y="150" width="225" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="YVf-Sz-5G3"/>
@@ -71,15 +71,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="372" y="115"/>
         </scene>
         <!--Snaps View Controller-->
         <scene sceneID="3FY-qk-Gf7">
             <objects>
-                <viewController id="auc-db-sVz" customClass="SnapsViewController" customModule="Snapit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="auc-db-sVz" customClass="SnapsViewController" customModule="Snapit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCm-bD-oqb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="knd-ZG-djQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cMN-GQ-g64" firstAttribute="trailing" secondItem="knd-ZG-djQ" secondAttribute="trailing" id="G4D-Bl-7hb"/>
+                            <constraint firstItem="cMN-GQ-g64" firstAttribute="bottom" secondItem="knd-ZG-djQ" secondAttribute="bottom" id="bYQ-wS-C1d"/>
+                            <constraint firstItem="knd-ZG-djQ" firstAttribute="leading" secondItem="cMN-GQ-g64" secondAttribute="leading" id="n3Z-9S-m5z"/>
+                            <constraint firstItem="knd-ZG-djQ" firstAttribute="top" secondItem="cMN-GQ-g64" secondAttribute="top" id="rgK-6e-MIx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cMN-GQ-g64"/>
                     </view>
                     <navigationItem key="navigationItem" id="Idb-p1-xey">
@@ -94,6 +107,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="knd-ZG-djQ" id="sbd-pv-8tD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sng-5h-47L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +118,7 @@
         <!--Picture View Controller-->
         <scene sceneID="MQg-3M-nE3">
             <objects>
-                <viewController id="C02-3r-ZoW" customClass="PictureViewController" sceneMemberID="viewController">
+                <viewController id="C02-3r-ZoW" customClass="PictureViewController" customModule="Snapit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tc9-2r-a9O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,9 +165,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionTextField" destination="5oI-xS-EmO" id="VvS-8o-cyu"/>
                         <outlet property="imageView" destination="Lef-pR-fqa" id="Ayw-1d-3L6"/>
                         <outlet property="nextButton" destination="FPJ-ta-Ft7" id="cKq-4Q-Z1w"/>
+                        <outlet property="textDescriptionFiled" destination="5oI-xS-EmO" id="eC6-dF-8UT"/>
                         <segue destination="Vla-AY-yss" kind="show" identifier="selectUserSegue" id="0EX-iw-8xF"/>
                     </connections>
                 </viewController>
