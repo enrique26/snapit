@@ -109,11 +109,52 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="knd-ZG-djQ" id="sbd-pv-8tD"/>
+                        <segue destination="kKv-y7-UC4" kind="show" identifier="snapSegueF" id="8Zt-0i-knj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sng-5h-47L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1833" y="115"/>
+        </scene>
+        <!--View Snap View Controller-->
+        <scene sceneID="vw9-Me-d5C">
+            <objects>
+                <viewController id="kKv-y7-UC4" customClass="ViewSnapViewController" customModule="Snapit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M60-a4-3MF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preview description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lc-ZB-AXU">
+                                <rect key="frame" x="5" y="636" width="365" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GQg-GF-o3b">
+                                <rect key="frame" x="10" y="74" width="355" height="552"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GQg-GF-o3b" firstAttribute="leading" secondItem="g9P-yK-yTK" secondAttribute="leading" constant="10" id="FzA-Bq-C3a"/>
+                            <constraint firstItem="g9P-yK-yTK" firstAttribute="trailing" secondItem="GQg-GF-o3b" secondAttribute="trailing" constant="10" id="LK0-Lr-4iW"/>
+                            <constraint firstItem="3Lc-ZB-AXU" firstAttribute="leading" secondItem="g9P-yK-yTK" secondAttribute="leading" constant="5" id="Uwz-nI-kij"/>
+                            <constraint firstItem="g9P-yK-yTK" firstAttribute="trailing" secondItem="3Lc-ZB-AXU" secondAttribute="trailing" constant="5" id="WMg-tg-F0K"/>
+                            <constraint firstItem="3Lc-ZB-AXU" firstAttribute="centerX" secondItem="M60-a4-3MF" secondAttribute="centerX" id="hJY-Yy-oCc"/>
+                            <constraint firstItem="3Lc-ZB-AXU" firstAttribute="top" secondItem="GQg-GF-o3b" secondAttribute="bottom" constant="10" id="kgI-vB-maq"/>
+                            <constraint firstItem="g9P-yK-yTK" firstAttribute="bottom" secondItem="3Lc-ZB-AXU" secondAttribute="bottom" constant="10" id="miS-Ko-nBb"/>
+                            <constraint firstItem="GQg-GF-o3b" firstAttribute="top" secondItem="g9P-yK-yTK" secondAttribute="top" constant="10" id="un6-Nt-59M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g9P-yK-yTK"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="GQg-GF-o3b" id="5a0-Gg-nQa"/>
+                        <outlet property="labelPrev" destination="3Lc-ZB-AXU" id="7wJ-AP-had"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMv-IS-dmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="936"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="MQg-3M-nE3">

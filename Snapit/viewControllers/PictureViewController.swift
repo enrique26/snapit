@@ -16,11 +16,12 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var textDescriptionFiled: UITextField!
     
-    
+    var uuid=NSUUID().uuidString
     var imagePicker=UIImagePickerController();
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.isEnabled=false
         imagePicker.delegate=self
         // Do any additional setup after loading the view.
     }
@@ -35,6 +36,7 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate,UI
         
         imageView.image=image
         imageView.backgroundColor = UIColor.clear
+        nextButton.isEnabled=true
         imagePicker.dismiss(animated: true, completion: nil)
     }
 
@@ -53,7 +55,7 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate,UI
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
         
-        imagesFolfer.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil) { (metadata, error) in
+        imagesFolfer.child("\(uuid).jpg").putData(imageData, metadata: nil) { (metadata, error) in
             if error != nil {
                 print("@have an error \(String(describing: error))")
             }else {
@@ -68,6 +70,7 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate,UI
         let nextVC = segue.destination as! SelectUserViewController
         nextVC.imageUrl=sender as! String
         nextVC.descript=textDescriptionFiled.text!
+        nextVC.uuid=uuid
         
     }
 }

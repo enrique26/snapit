@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41EB502E8A02A8FA5E80071A /* Pods_Snapit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237431BFF2BB27F31A3B3EE3 /* Pods_Snapit.framework */; };
+		8F09D1832050D6C000D5384B /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F09D1822050D6C000D5384B /* ViewSnapViewController.swift */; };
 		8F2452C6202D11B200001552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2452C5202D11B200001552 /* AppDelegate.swift */; };
 		8F2452C8202D11B200001552 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2452C7202D11B200001552 /* SignViewController.swift */; };
 		8F2452CB202D11B200001552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2452C9202D11B200001552 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		237431BFF2BB27F31A3B3EE3 /* Pods_Snapit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A173A91322CAE124675EF3F /* Pods-Snapit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapit/Pods-Snapit.debug.xcconfig"; sourceTree = "<group>"; };
+		8F09D1822050D6C000D5384B /* ViewSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		8F2452C2202D11B100001552 /* Snapit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2452C5202D11B200001552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F2452C7202D11B200001552 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				8F3DA5A7203110890007EA65 /* SelectUserViewController.swift */,
 				8F3DA5A52030FD670007EA65 /* PictureViewController.swift */,
 				8F2452D9202D270A00001552 /* SnapsViewController.swift */,
+				8F09D1822050D6C000D5384B /* ViewSnapViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Snapit/Pods-Snapit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -210,6 +214,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -262,6 +267,7 @@
 				8F3DA5A62030FD670007EA65 /* PictureViewController.swift in Sources */,
 				8F3DA5A8203110890007EA65 /* SelectUserViewController.swift in Sources */,
 				8F2452C6202D11B200001552 /* AppDelegate.swift in Sources */,
+				8F09D1832050D6C000D5384B /* ViewSnapViewController.swift in Sources */,
 				8FECB2322044E42000D9795F /* Snap.swift in Sources */,
 				8FCBCA142040EB9900C09D50 /* User.swift in Sources */,
 				8F2452DA202D270A00001552 /* SnapsViewController.swift in Sources */,
